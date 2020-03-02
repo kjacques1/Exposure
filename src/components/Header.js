@@ -40,7 +40,7 @@ class Header extends React.Component {
           <FontIcon className="material-icons" style={{
             color: appBar.textColor
           }}>alarm_on</FontIcon>
-          <ToolbarTitle text="Vivid Trace" style={{
+          <ToolbarTitle text="Exposure Mapping" style={{
             color: appBar.textColor
           }}/>
         </ToolbarGroup>
