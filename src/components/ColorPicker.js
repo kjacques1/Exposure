@@ -9,7 +9,7 @@ export class ColorPickerItem extends Component {
     selected: PropTypes.bool    
   }
   static defaultProps = {
-    iconComponent: <FontIcon className="material-icons">lens</FontIcon>,
+    iconComponent: <FontIcon className="material-icons">flag</FontIcon>,
     selectedIconComponent: <FontIcon className="material-icons">radio_button_checked</FontIcon>,
     selected: false
   }

@@ -5,7 +5,7 @@ import {toAmPm} from '../utils/time'
 import {TableRow, TableRowColumn} from 'material-ui/Table'
 import TextField from 'material-ui/TextField'
 import FlatButton  from 'material-ui/FlatButton'
-import FontIcon from 'material-ui/FontIcon'
+
 
 import AddTagButtonContainer from './AddTagButtonContainer'
 
@@ -62,6 +62,7 @@ class TimeEntryListItem extends Component {
             />
           </div>
         </TableRowColumn>
+        <TableRowColumn>{toAmPm(this.props.startTime)} - {toAmPm(this.props.endTime)}</TableRowColumn>
         <TableRowColumn>
           <div onClick={(e) => {
               e.preventDefault();
@@ -74,15 +75,21 @@ class TimeEntryListItem extends Component {
             />            
           </div>        
         </TableRowColumn>
-        <TableRowColumn>{toAmPm(this.props.startTime)} - {toAmPm(this.props.endTime)}</TableRowColumn>
+        
         <TableRowColumn>
           <div onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();
           }}>
             <FlatButton
-              icon={<FontIcon className="material-icons" style={{color: 'grey', width: 50, fontSize: 20}}>delete</FontIcon>}
+                label="Remove" 
+                
               onClick={this.handleRemove}
+            />
+            <FlatButton
+                label="Edit" 
+                
+              
             />
           </div>
         </TableRowColumn>

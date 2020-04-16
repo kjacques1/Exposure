@@ -37,9 +37,7 @@ class Header extends React.Component {
         backgroundColor: appBar.color   
       }}>
         <ToolbarGroup firstChild={true}> 
-          <FontIcon className="material-icons" style={{
-            color: appBar.textColor
-          }}>alarm_on</FontIcon>
+        <img src={require('./favicon4.png')} />
           <ToolbarTitle text="Exposure Mapping" style={{
             color: appBar.textColor
           }}/>

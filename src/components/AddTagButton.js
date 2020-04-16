@@ -28,7 +28,7 @@ export class TagItem extends Component {
       <ListItem
         className='list-item' 
         primaryText={this.props.name} 
-        leftIcon={<FontIcon className="material-icons" style={{color: this.props.color}}>lens</FontIcon>} 
+        leftIcon={<FontIcon className="material-icons" style={{color: this.props.color}}>flag</FontIcon>} 
         onClick={this.handleSelectTag}
       />      
     )
@@ -73,7 +73,7 @@ export class TagItemList extends Component {
           <TextField
             id="find-tag"
             underlineShow={false}
-            hintText="Find Tag"
+            hintText="Find Language"
             className="input-filter"
             ref={node => this.findTag = node}
             value={this.state.filterTag}
@@ -112,14 +112,14 @@ export class TagButton extends Component {
           onClick={this.props.onClick}
           label={this.props.tagName}
           labelStyle={{color: this.props.tagColor, textTransform: 'none'}}
-          icon={<FontIcon className="material-icons" style={{color: this.props.tagColor, fontSize: 20}}>lens</FontIcon>}
+          icon={<FontIcon className="material-icons" style={{color: this.props.tagColor, fontSize: 20}}>flag</FontIcon>}
         />
       :
         <FlatButton
           onClick={this.props.onClick}
-          label="Tag"
+          label="Language"
           labelStyle={{textTransform: 'none'}}
-          icon={<FontIcon className="material-icons" style={{color: 'green', fontSize: 30}}>add</FontIcon>}
+          icon={<FontIcon className="material-icons" style={{color: 'green', fontSize: 30}}>language</FontIcon>}
         />      
     )
   }
@@ -262,7 +262,7 @@ class AddTagButton extends Component {
           <List className="list">
             <div style={{textAlign: 'center'}}>
               <FlatButton
-                label="Add Tag"
+                label="Add Language"
                 labelStyle={{textTransform: 'none'}}
                 icon={<FontIcon className="material-icons" style={{color: 'lightgreen'}}>add</FontIcon>}
                 onClick={this.handleOpenCreateTagDialog}
@@ -271,7 +271,7 @@ class AddTagButton extends Component {
           </List>
         </Popover>
         <Dialog
-          title="Create new tag"
+          title="Create new language"
           open={this.state.createTagDialogOpen}
           onRequestClose={this.handleCloseCreateTagDialog}
           contentStyle={{maxWidth: 400}}

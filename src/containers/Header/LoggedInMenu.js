@@ -5,10 +5,10 @@ import {Link} from 'react-router'
 
 import {signout} from '../../actions/signout'
 
-import IconButton from 'material-ui/IconButton';
+import FontIcon from 'material-ui/FontIcon'
 import IconMenu from 'material-ui/IconMenu'
 import MenuItem from 'material-ui/MenuItem'
-import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
+
 
 import muiThemeable from 'material-ui/styles/muiThemeable'
 
@@ -19,13 +19,17 @@ class LoggedInMenu extends Component {
       <IconMenu
         iconStyle={{color: appBar.textColor}}
         iconButtonElement={
-          <IconButton><MoreVertIcon /></IconButton>
+          <FontIcon className="material-icons" 
+          >menu</FontIcon>
         }
         targetOrigin={{horizontal: 'right', vertical: 'top'}}
         anchorOrigin={{horizontal: 'right', vertical: 'top'}}
       >
         <MenuItem primaryText="Profile" containerElement={<Link to="/profile" />} />
         <MenuItem primaryText="Sign out" onClick={this.props.onSignout} />
+        <MenuItem primaryText="Admin Side"  />
+        <MenuItem primaryText="About"  />
+        <MenuItem primaryText="Links"  />
       </IconMenu>
     )    
   }

@@ -21,7 +21,7 @@ const DesktopNav = (props) => {
       <ToolbarGroup>
         <ToolbarSeparator />
         <FlatButton 
-          label="Tracker" 
+          label="Mapping" 
           containerElement={<Link to="/tracker"/>}  
           style={getMenuStyle(appBar, pathname, '/tracker')} />
         <FlatButton 

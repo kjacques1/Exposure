@@ -41,7 +41,7 @@ class CreateTagForm extends Component {
     return (
       <form onSubmit={this.handleSave}>
         <TextField
-          hintText="Tag name"
+          hintText="Language name"
           id="tag-name"
           errorText={this.state.tagNameInputError}
           value={this.state.tagName}
@@ -55,7 +55,7 @@ class CreateTagForm extends Component {
         <RaisedButton
           secondary={true}
           fullWidth={true}
-          label="Create tag"
+          label="Create Language"
           labelStyle={{textTransform: 'none'}}
           onClick={this.handleSave}
         />

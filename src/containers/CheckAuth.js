@@ -6,7 +6,7 @@ import history from '../history'
 import {get} from 'lodash'
 import {isUserLoggedIn} from '../actions/isUserLoggedIn'
 
-import LinearProgress from 'material-ui/LinearProgress'
+
 
 export class CheckAuth extends Component {
   static propTypes = {
@@ -39,8 +39,8 @@ export class CheckAuth extends Component {
         marginTop: '30vh',
         textAlign: 'center'
       }}>
-        Check authentication status <br/><br/>
-        <LinearProgress mode="indeterminate" />
+        Loading <br/><br/>
+        
       </div> 
     )
   }
