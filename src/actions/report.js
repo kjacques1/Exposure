@@ -1,5 +1,5 @@
-import firebase from '../ConfigureFirebase'
-import * as types from '../constants/ActionTypes'
+import firebase from '../DatabaseConnection'
+import * as types from '../Solide'
 import {actionStart, actionSuccess} from './utils/template'
 
 // Fetch report data

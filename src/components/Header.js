@@ -39,7 +39,8 @@ class Header extends React.Component {
         <ToolbarGroup firstChild={true}> 
         <img src={require('./favicon4.png')} />
           <ToolbarTitle text="Exposure Mapping" style={{
-            color: appBar.textColor
+            color: 'black',
+            fontWeight: 'bold'
           }}/>
         </ToolbarGroup>
         { 

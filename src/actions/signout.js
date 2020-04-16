@@ -1,6 +1,6 @@
-import firebase from '../ConfigureFirebase'
+import firebase from '../DatabaseConnection'
 import history from '../history'
-import * as types from '../constants/ActionTypes'
+import * as types from '../Solide'
 import {actionStart, actionFailed, actionSuccess} from './utils/template'
 
 export const signout = () => {

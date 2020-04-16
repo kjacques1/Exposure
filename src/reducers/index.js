@@ -6,7 +6,7 @@ import timeEntries from './timeEntries'
 import tags from './tags'
 import report from './report'
 
-import * as types from '../constants/ActionTypes'
+import * as types from '../Solide'
 
 const appReducer = combineReducers({
   auth,

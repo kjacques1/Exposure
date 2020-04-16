@@ -65,7 +65,7 @@ export class TagItemList extends Component {
       <div>
         <List className="list first">
           <FontIcon className="material-icons" style={{
-            color: 'lightgrey', 
+            color: 'black', 
             fontSize: 18,
             top: 5,
             paddingRight: 8
@@ -119,7 +119,7 @@ export class TagButton extends Component {
           onClick={this.props.onClick}
           label="Language"
           labelStyle={{textTransform: 'none'}}
-          icon={<FontIcon className="material-icons" style={{color: 'green', fontSize: 30}}>language</FontIcon>}
+          icon={<FontIcon className="material-icons" style={{color: 'black', fontSize: 30}}>language</FontIcon>}
         />      
     )
   }
@@ -260,11 +260,11 @@ class AddTagButton extends Component {
               <TagItemList onSelectTag={this.handleSelectTag} tags={this.props.tags} dialogMaxHeight={this.props.dialogMaxHeight} />
           }
           <List className="list">
-            <div style={{textAlign: 'center'}}>
+            <div style={{textAlign: 'left'}}>
               <FlatButton
                 label="Add Language"
                 labelStyle={{textTransform: 'none'}}
-                icon={<FontIcon className="material-icons" style={{color: 'lightgreen'}}>add</FontIcon>}
+                icon={<FontIcon className="material-icons" style={{color: 'black'}}>add</FontIcon>}
                 onClick={this.handleOpenCreateTagDialog}
               />
             </div>

@@ -1,5 +1,5 @@
-import firebase from '../configureFirebase'
-import * as types from '../constants/ActionTypes'
+import firebase from '../DatabaseConnection'
+import * as types from '../Solide'
 import {actionStart, actionFailed, actionSuccess} from './utils/template'
 
 // Check if user already logged in with current browser

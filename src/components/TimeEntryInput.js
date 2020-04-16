@@ -170,7 +170,7 @@ export class TimeEntryInput extends Component {
     return (
       <div className="time-entry-input-form">
         <TextField
-          hintText="What are you doing ?"
+          hintText="Track here?"
           value={this.state.text}
           onChange={this.handleChangeText}
           onKeyPress={this.handleKeyPress}
@@ -194,7 +194,7 @@ export class TimeEntryInput extends Component {
         </span>
         { this.state.duration && <RaisedButton
             name='btn-stop'
-            icon={<FontIcon className="material-icons" style={{color: red500, width: 50, fontSize: 30}}>stop</FontIcon>}
+            icon={<FontIcon className="material-icons" style={{color: 'black', width: 50, fontSize: 30}}>stop</FontIcon>}
             style={{
               marginLeft: 20,
               minWidth: 50
@@ -208,7 +208,7 @@ export class TimeEntryInput extends Component {
 
         { this.state.duration && <FlatButton 
             name='btn-remove'
-            icon={<FontIcon className="material-icons" style={{color: 'grey', width: 50, fontSize: 20}}>delete</FontIcon>}
+            icon={<FontIcon className="material-icons" style={{color: 'black', width: 50, fontSize: 20}}>highlightoff</FontIcon>}
             style={{
               marginLeft: 20,
               minWidth: 50
@@ -218,7 +218,7 @@ export class TimeEntryInput extends Component {
         }
 
         { !this.state.duration && <FlatButton 
-            icon={<FontIcon className="material-icons" style={{color: 'green', width: 50, fontSize: 30}}>play_arrow</FontIcon>}
+            icon={<FontIcon className="material-icons" style={{color: 'black', width: 50, fontSize: 30}}>access_time</FontIcon>}
             style={{
               marginLeft: 20,
               minWidth: 50
@@ -235,7 +235,7 @@ export class TimeEntryInput extends Component {
         }
         <Snackbar
           open={this.props.removedSuccess}
-          message="The time entry was deleted"
+          message="Success"
           autoHideDuration={4000}
         />
       </div> 

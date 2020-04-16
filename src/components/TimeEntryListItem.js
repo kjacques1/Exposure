@@ -48,7 +48,7 @@ class TimeEntryListItem extends Component {
   render() {
     return(
       <TableRow>
-        <TableRowColumn>
+        <TableRowColumn style={{fontWeight: 'bold'}} >
           <div onClick={(e) => {
               e.preventDefault();
               e.stopPropagation();
@@ -62,7 +62,7 @@ class TimeEntryListItem extends Component {
             />
           </div>
         </TableRowColumn>
-        <TableRowColumn>{toAmPm(this.props.startTime)} - {toAmPm(this.props.endTime)}</TableRowColumn>
+        <TableRowColumn style={{fontWeight: 'bold'}} >{toAmPm(this.props.startTime)} - {toAmPm(this.props.endTime)}</TableRowColumn>
         <TableRowColumn>
           <div onClick={(e) => {
               e.preventDefault();
@@ -76,12 +76,12 @@ class TimeEntryListItem extends Component {
           </div>        
         </TableRowColumn>
         
-        <TableRowColumn>
+        <TableRowColumn style={{fontWeight: 'bold'}} > 
           <div onClick={(e) => {
             e.preventDefault();
             e.stopPropagation();
           }}>
-            <FlatButton
+            <FlatButton 
                 label="Remove" 
                 
               onClick={this.handleRemove}

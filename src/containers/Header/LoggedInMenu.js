@@ -17,7 +17,7 @@ class LoggedInMenu extends Component {
     const appBar = this.props.muiTheme.appBar
     return (
       <IconMenu
-        iconStyle={{color: appBar.textColor}}
+        iconStyle={{color: 'black', fontWeight: 'bold'}}
         iconButtonElement={
           <FontIcon className="material-icons" 
           >menu</FontIcon>

@@ -1,4 +1,4 @@
-import * as types from '../constants/ActionTypes'
+import * as types from '../Solide'
 import {combineReducers} from 'redux'
 
 const verifyPasswordResetCode = (state = {}, action) => {
