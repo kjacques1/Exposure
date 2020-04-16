@@ -1,4 +1,4 @@
-import firebase from '../DatabaseConnection'
+import firebase from '../configureFirebase'
 import * as types from '../constants/ActionTypes'
 import {actionStart, actionFailed, actionSuccess} from './utils/template'
 

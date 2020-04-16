@@ -1,4 +1,4 @@
-import firebase from '../configureFirebase'
+import firebase from '../ConfigureFirebase'
 import history from '../history'
 import * as types from '../constants/ActionTypes'
 import {actionStart, actionFailed, actionSuccess} from './utils/template'
